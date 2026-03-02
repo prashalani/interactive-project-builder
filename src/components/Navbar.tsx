@@ -15,7 +15,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-section-dark backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         <a href="#home" className="flex items-center gap-2">
           <img src="/images/logo.avif" alt="Roam Ceylon Tours" className="h-10 w-auto" />
@@ -27,7 +27,7 @@ const Navbar = () => {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+              className="text-sm font-medium text-[hsl(var(--section-dark-foreground))]/80 hover:text-primary transition-colors"
             >
               {link.label}
             </a>
@@ -46,19 +46,19 @@ const Navbar = () => {
 
         {/* Mobile toggle */}
         <button onClick={() => setOpen(!open)} className="lg:hidden p-2">
-          {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {open ? <X className="w-6 h-6 text-[hsl(var(--section-dark-foreground))]" /> : <Menu className="w-6 h-6 text-[hsl(var(--section-dark-foreground))]" />}
         </button>
       </div>
 
       {/* Mobile menu */}
       {open && (
-        <div className="lg:hidden bg-background border-t border-border px-4 py-6 space-y-4">
+        <div className="lg:hidden bg-section-dark border-t border-border/20 px-4 py-6 space-y-4">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="block text-sm font-medium text-foreground/80 hover:text-primary"
+              className="block text-sm font-medium text-[hsl(var(--section-dark-foreground))]/80 hover:text-primary"
             >
               {link.label}
             </a>
