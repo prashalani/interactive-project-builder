@@ -2,7 +2,7 @@ const HeroSection = () => {
   return (
     <section id="home" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
       <img
-        src="/images/coconut.jpg"
+        src="/images/hero-bg.avif"
         alt="Sri Lanka adventure"
         className="absolute inset-0 w-full h-full object-cover"
       />
