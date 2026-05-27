@@ -1,4 +1,11 @@
+import ruwanweliseya from "../assets/Ruwanweliseya.webp";
+import santorini from "../assets/Santorini.webp";
+import yala from "../assets/yala.jpeg";
+
 const destinations = [
+  { src: ruwanweliseya, alt: "Ruwanwelisaya Stupa" },
+  { src: santorini, alt: "Scenic Coastline" },
+  { src: yala, alt: "Yala National Park" },
   { src: "/images/beach1.jpg", alt: "Beach" },
   { src: "/images/beach2.jpg", alt: "Coast" },
   { src: "/images/wildlife.jpg", alt: "Wildlife" },
