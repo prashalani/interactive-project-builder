@@ -1,3 +1,5 @@
+import logo from "../assets/logo.webp";
+
 const Footer = () => {
   return (
     <footer className="bg-section-dark py-16">
@@ -5,7 +7,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-12">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold">RoamCeylonTours</h3>
+            <img src={logo} alt="Roam Ceylon Tours" className="h-12 w-auto" />
             <p className="text-sm opacity-60 leading-relaxed">
               Ceylon Travels your trusted partner in discovering Sri Lanka's beauty
             </p>

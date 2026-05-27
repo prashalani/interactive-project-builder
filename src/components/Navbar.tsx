@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
+import logo from "../assets/logo.webp";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -18,7 +19,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-section-dark backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         <a href="#home" className="flex items-center gap-2">
-          <img src="/images/logo.avif" alt="Roam Ceylon Tours" className="h-10 w-auto" />
+          <img src={logo} alt="Roam Ceylon Tours" className="h-10 w-auto" />
         </a>
 
         {/* Desktop nav */}
